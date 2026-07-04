@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherSphere</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🌤 WeatherSphere</h1>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="city"
+                placeholder="Search for a city...">
+
+            <button id="searchBtn">
+                Search
+            </button>
+        </div>
+
+        <div class="weather-card">
+
+            <div class="weather-icon">
+                ☀️
+            </div>
+
+            <h2 id="cityName">
+                Islamabad
+            </h2>
+
+            <h3 id="temperature">
+                28°C
+            </h3>
+
+            <p id="description">
+                Sunny
+            </p>
+
+        </div>
+
+        <div class="details">
+
+            <div class="detail-card">
+                💧
+                <h4>Humidity</h4>
+                <p>56%</p>
+            </div>
+
+            <div class="detail-card">
+                💨
+                <h4>Wind</h4>
+                <p>12 km/h</p>
+            </div>
+
+            <div class="detail-card">
+                🌡
+                <h4>Pressure</h4>
+                <p>1012 hPa</p>
+            </div>
+
+            <div class="detail-card">
+                👁
+                <h4>Visibility</h4>
+                <p>10 km</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
