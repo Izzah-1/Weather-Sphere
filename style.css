@@ -117,3 +117,88 @@ h1{
 
     transform:scale(1.05);
 }
+/* =========================
+   WEATHER CARD
+========================= */
+
+.weather-card{
+
+    margin-bottom:30px;
+}
+
+.weather-icon{
+
+    font-size:80px;
+
+    margin-bottom:15px;
+}
+
+.weather-card h2{
+
+    color:white;
+
+    font-size:32px;
+
+    margin-bottom:10px;
+}
+
+.weather-card h3{
+
+    color:white;
+
+    font-size:60px;
+
+    margin-bottom:10px;
+}
+
+.weather-card p{
+
+    color:white;
+
+    font-size:22px;
+}
+/* =========================
+   DETAILS
+========================= */
+
+.details{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+}
+
+.detail-card{
+
+    background:rgba(255,255,255,0.25);
+
+    border-radius:18px;
+
+    padding:18px;
+
+    color:white;
+
+    transition:.3s;
+}
+
+.detail-card:hover{
+
+    transform:translateY(-5px);
+
+    background:rgba(255,255,255,0.35);
+}
+
+.detail-card h4{
+
+    margin:10px 0;
+}
+
+.detail-card p{
+
+    font-size:18px;
+
+    font-weight:bold;
+}
+
