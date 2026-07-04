@@ -1,1 +1,31 @@
+/* =========================
+   RESET
+========================= */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(
+        135deg,
+        #4A90E2,
+        #74B9FF,
+        #B2D8FF
+    );
+
+    padding:20px;
+}
