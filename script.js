@@ -86,3 +86,62 @@ function getWeatherEmoji(main) {
     }
 
 }
+
+async function getForecast(city) {
+
+    const url =
+        `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
+
+    try {
+
+        const response = await fetch(url);
+
+        if (!response.ok) {
+            return;
+        }
+
+        const data = await response.json();
+
+        displayForecast(data.list);
+
+    }
+
+    catch (error) {
+
+        console.log(error);
+
+    }
+
+}
+
+function displayForecast(forecastList) {
+
+    forecastContainer.innerHTML = "";
+
+    const dailyForecast = forecastList.filter(item =>
+        item.dt_txt.includes("12:00:00")
+    );
+
+    dailyForecast.slice(0, 5).forEach(day => {
+
+        const date = new Date(day.dt_txt);
+
+        const dayName = days[date.getDay()];
+
+        const emoji = getWeatherEmoji(day.weather[0].main);
+
+        const temp = Math.round(day.main.temp);
+
+        forecastContainer.innerHTML += `
+            <div class="forecast-card">
+                <p>${dayName}</p>
+                <div>${emoji}</div>
+                <span>${temp}°C</span>
+            </div>
+        `;
+
+    });
+
+}
+
+
