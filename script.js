@@ -1,4 +1,4 @@
-const apiKey = "";
+const apiKey = "ecbf02ed9e37d4a15e3893abbe2b6c19";
 
 const cityInput = document.getElementById("city");
 const searchBtn = document.getElementById("searchBtn");
@@ -33,7 +33,7 @@ async function getWeather() {
         }
 
         const data = await response.json();
-
+        await getForecast(city);
         cityName.textContent = data.name;
         temperature.textContent = Math.round(data.main.temp) + "°C";
         description.textContent = data.weather[0].description;
