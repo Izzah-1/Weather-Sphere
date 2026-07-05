@@ -7,6 +7,7 @@ const cityName = document.getElementById("cityName");
 const temperature = document.getElementById("temperature");
 const description = document.getElementById("description");
 const forecastContainer = document.getElementById("forecastContainer");
+const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const detailCards = document.querySelectorAll(".detail-card");
 
 searchBtn.addEventListener("click", getWeather);
