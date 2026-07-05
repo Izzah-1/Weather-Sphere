@@ -33,7 +33,7 @@ async function getWeather() {
         }
 
         const data = await response.json();
-        await getForecast(city);
+        //await getForecast(city);
         cityName.textContent = data.name;
         temperature.textContent = Math.round(data.main.temp) + "°C";
         description.textContent = data.weather[0].description;
