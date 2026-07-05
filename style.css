@@ -258,7 +258,52 @@ h1{
 }
 
 .forecast-card p{
+/* =========================
+   FLOATING WEATHER ICON
+========================= */
 
+@keyframes float {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+.weather-icon {
+
+    animation: float 3s ease-in-out infinite;
+}
+   /* =========================
+   FADE IN
+========================= */
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.container {
+
+    animation: fadeIn 0.8s ease;
+}
     font-weight:bold;
 }
 
