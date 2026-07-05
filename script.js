@@ -58,3 +58,30 @@ async function getWeather() {
     }
 
 }
+function getWeatherEmoji(main) {
+
+    switch (main) {
+
+        case "Clear":
+            return "☀️";
+
+        case "Clouds":
+            return "☁️";
+
+        case "Rain":
+            return "🌧️";
+
+        case "Thunderstorm":
+            return "⛈️";
+
+        case "Snow":
+            return "❄️";
+
+        case "Drizzle":
+            return "🌦️";
+
+        default:
+            return "🌤️";
+    }
+
+}
