@@ -301,6 +301,30 @@ h1{
 }
 
 .container {
+   /* =========================
+   GREETING
+========================= */
+
+.greeting{
+
+    margin-bottom:25px;
+
+    color:white;
+}
+
+.greeting h3{
+
+    font-size:24px;
+
+    margin-bottom:8px;
+}
+
+.greeting p{
+
+    font-size:15px;
+
+    opacity:0.9;
+}
 
     animation: fadeIn 0.8s ease;
 }
