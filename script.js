@@ -6,7 +6,7 @@ const searchBtn = document.getElementById("searchBtn");
 const cityName = document.getElementById("cityName");
 const temperature = document.getElementById("temperature");
 const description = document.getElementById("description");
-
+const forecastContainer = document.getElementById("forecastContainer");
 const detailCards = document.querySelectorAll(".detail-card");
 
 searchBtn.addEventListener("click", getWeather);
