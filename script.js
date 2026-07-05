@@ -54,8 +54,11 @@ async function getWeather() {
 
     catch (error) {
 
-        alert("City not found!");
+    console.error(error);
 
+    alert(error.message);
+
+}
     }
 
 }
